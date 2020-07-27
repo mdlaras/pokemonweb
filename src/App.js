@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Searchbar from './Searchbar'
+import Card from './Card'
 
 class App extends React.Component {
   render(){
