@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
-class Searchbar extends Component{
-    render(){
+const Searchbar = ({searchChange}) => {
         return(
-            <input className='search'>Enter Pokemon Name</input>
+            <div>
+                <input type='search' placeholder="Enter Pokemon Name" onChange={searchChange}/>
+            </div>
+            
         )
-    }
-}
+    };
 
 export default Searchbar
