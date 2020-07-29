@@ -24,10 +24,13 @@ class App extends React.Component {
     const {pokemon, searchfield} = this.state
     const filteredpoke = pokemon.filter(pokey => {return pokey.name.includes(searchfield.toLowerCase())})
     return (
-      <div>
-        <h1>The Pokedex</h1>
+      <div className='tc'>
+        <h1 class='bg-gold pa3'>The Pokedex</h1>
         <Searchbar searchChange = {this.onSearchChange}/>
-        <CardList pokemon = {filteredpoke}/>
+        <div class='pa3'>
+          <CardList pokemon = {filteredpoke}/>
+        </div>
+        
       </div>
     );
   }

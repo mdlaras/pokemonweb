@@ -5,8 +5,9 @@ const Card = ({name, pokeurl}) => {
     const [pokeorder, pokeorderset] = useState(0)
     fetch(newurl).then(response=>{return response.json()}).then(poki=>{pokeorderset(poki.order)})
     return(
-        <div>
+        <div class='bg-silver dib br3 pa3 ma2 grow bw2 shadow-5'>
             <img alt= 'sprite' src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeorder}.png`} width='200' height='200'/>
+            <h2>#{pokeorder}</h2>
             <h1>{name}</h1>
         </div>
     )
