@@ -1,5 +1,6 @@
 {
   "name": "pokemonweb",
+  "homepage": "https://mdlaras.github.io/pokemonweb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
